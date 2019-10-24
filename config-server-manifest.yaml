@@ -1,12 +1,12 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: config-server
+  name: config-server-pod
   labels:
     app: config-server
 spec:
   containers:
-   - name: config-server
+   - name: config-server-container
      image: navkkrnair/10-2019-config-server:2.0
      imagePullPolicy: Always
      livenessProbe:
@@ -34,6 +34,3 @@ spec:
     protocol: TCP
   selector:
     app: config-server
----
-        
-          
